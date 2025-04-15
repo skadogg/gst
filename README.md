@@ -8,8 +8,8 @@ This simple webpage gently nudges the time forward leading up to Daylight Saving
 
 ## Get Your Groove On
 
-1.  Snag the `index.html` file.
-2.  Pop it open in your browser.
+1. Clone or download this repository.
+2. Open `index.html` in your browser.
 
 See your special "Grove Standard Time" tick by, updating every second! It even digs dark mode! 🌙
 
@@ -22,4 +22,13 @@ See your special "Grove Standard Time" tick by, updating every second! It even d
 
 ## Wanna Tweak the Tempo?
 
-Peep the JavaScript in the code if you want to change other things. You can also mess with the colors in the `style` section to match your mood. 😎
+* **JavaScript:** Check out the `script.js` file to adjust the time calculations or behavior.
+* **Styles:** Customize the colors and layout in the `styles.css` file to match your mood. 😎
+
+## File Structure
+
+- `index.html`: The main webpage structure.
+- `styles.css`: Handles all the styling, including light and dark mode.
+- `script.js`: Contains the logic for calculating and displaying Grove Standard Time.
+
+Enjoy the groove! 🎶
