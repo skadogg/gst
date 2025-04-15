@@ -1,0 +1,81 @@
+/* Nord Color Palette (https://www.nordtheme.com/) - Frost */
+:root {
+    --nord8: #88c0d0;
+    --nord9: #81a1c1;
+    --nord10: #5e81ac;
+    --nord11: #bf616a;
+    --nord7: #8fbcbb; /* Correct Frost color for accent */
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4; /* Light background */
+    color: var(--nord10); /* Dark text from Frost */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #3b4252; /* Polar Night 1 for dark background */
+        color: var(--nord8); /* Light text from Frost */
+    }
+    h1 {
+        color: var(--nord9);
+    }
+    #modified-time {
+        background-color: #434c5e; /* Polar Night 2 for dark box */
+        color: var(--nord8);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    }
+    #noscript-message {
+        color: var(--nord8);
+    }
+    .percentage-bar-container {
+        background-color: #4c566a; /* Polar Night 3 for dark bar container */
+    }
+    .percentage-bar {
+        background-color: var(--nord7); /* Correct Frost color for percent bar */
+    }
+}
+
+h1 {
+    color: var(--nord9); /* Blue from Frost */
+    margin-bottom: 20px;
+}
+
+#modified-time {
+    font-size: 2em;
+    padding: 20px;
+    background-color: #fff; /* Light background for the time box */
+    color: var(--nord10); /* Dark text from Frost */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#noscript-message {
+    margin-top: 20px;
+    font-style: italic;
+    color: var(--nord10); /* Dark text from Frost */
+}
+
+.percentage-bar-container {
+    width: 200px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.percentage-bar {
+    height: 100%;
+    background-color: var(--nord7); /* Correct Frost color for percent bar */
+    border-radius: 5px;
+}
